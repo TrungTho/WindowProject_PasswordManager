@@ -1,0 +1,22 @@
+﻿<Window x:Class="PasswordManager.InfoScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManager"
+        mc:Ignorable="d"
+       Title="Details" Height="300" Width="400">
+    <Canvas>
+        <Label Content="Email/SDT:" Height="25" Canvas.Left="19" Canvas.Top="34.96"/>
+        <Label Content="Password:" Height="25" Canvas.Left="19" Canvas.Top="71.96" RenderTransformOrigin="0.467,0.575"/>
+        <Label Content="Confirm Password:" Height="25" Canvas.Left="19" Canvas.Top="106.96"/>
+        <Label Content="Type:" Canvas.Left="19" Height="25" Canvas.Top="143"/>
+        <TextBox Name="textboxEmail" Width="214.667" Height="25" Canvas.Left="145" Canvas.Top="34.96"/>
+        <PasswordBox Name="textboxPass" Width="214.667" Height="25" Canvas.Top="71.96" Canvas.Left="145"/>
+        <PasswordBox Name="textboxConfirm" Width="214.667" Height="25" Canvas.Top="106.96" Canvas.Left="145"/>
+        <TextBox Name="textboxType" Width="214.667" Height="25" Canvas.Top="143" Canvas.Left="145"/>
+
+        <Button Name="buttonOK"  Content="OK" IsDefault="True" Click="ButtonOK_Click" Width="80" Height="25" Canvas.Left="71.333" Canvas.Top="210.333"/>
+        <Button Name="buttonCancel" Content="Cancel" IsCancel="True" Width="80" Height="25" Canvas.Left="240" Canvas.Top="210.333"/>
+    </Canvas>
+</Window>
